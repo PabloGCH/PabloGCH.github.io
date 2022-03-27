@@ -41,3 +41,18 @@ section p {
 #projects, #contact {
     width: 80%;
 }
+
+.project-info {
+    width: 90%;
+}
+.project-info h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.project-info img {
+    width: 100%;
+}
+.project-info p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
