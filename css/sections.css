@@ -1,0 +1,43 @@
+:root {
+    --section-color: #495057;
+    --section-text-color: #CED4DA;
+}
+
+main {
+    top:0px;
+    padding: 5em 1.5em 0px 1.5em;
+    padding-top: 5em;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.me-img {
+    width: 40%;
+}
+.my-name {
+    text-align: center;
+    font-size: 5em;
+    color: var(--section-text-color);
+}
+
+#about-me {
+    width: 40%;
+}
+
+section {
+    padding: 1.5em;
+    background-color: var(--section-color);
+    color: var(--section-text-color);
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+}
+section p {
+    margin-top: 1em;
+}
+#about-me h3{
+    text-align: center;
+}
+#projects, #contact {
+    width: 80%;
+}
