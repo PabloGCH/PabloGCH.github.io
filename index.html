@@ -14,6 +14,8 @@
 <body>
     <header class="header">
         <nav>
+            <input type="checkbox" id="dropdown-check">
+            <label for="dropdown-check">Menu</label>
             <ul>
                 <a href="#">
                     <li>Inicio</li>
@@ -48,8 +50,10 @@
                 <div class="projects-grid">
                     <a href="pages/newsPage.html">
                         <div class="project-box">
-                            <img src="img/newsPageImg.png">
-                            <div>
+                            <div class="project-box-img-wrapper">
+                                <img src="img/newsPageImg.png">
+                            </div>
+                            <div class="project-box-content">
                                 <h4>News Page</h4>
                                 <p>Una simple pagina que realice para
                                 practicar el uso de api rests y jquery.</p>
@@ -58,8 +62,10 @@
                     </a>
                     <a href="pages/angularNotepad.html">
                         <div class="project-box">
-                            <img src="img/angularNotepadImg.jpg">
-                            <div>
+                            <div class="project-box-img-wrapper">
+                                <img src="img/angularNotepadImg.jpg">
+                            </div>
+                            <div class="project-box-content">
                                 <h4>Angular Notepad</h4>
                                 <p>Una aplicacion notepad que realice con angular
                                 para terminar de afianzar los conceptos basicos del framework
