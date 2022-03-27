@@ -14,11 +14,37 @@
     height: 100%;
 }
 
+@keyframes project-box-hover {
+    from {
+        background-color: transparent;
+    }
+    to {
+        background-color: #6C757D; 
+    }
+}
+
 .project-box:hover {
+    animation: project-box-hover;
+    animation-duration: 0.1s;
     background-color: #6C757D;
 }
 .project-box-img-wrapper {
     position: relative;
+}
+
+@keyframes gradient-animation{
+    0% {
+        background: linear-gradient(#343a4028, #343a4067,#343a40a4);
+    }
+    50% {
+        background: linear-gradient(#343a4028, #343a406e,#343a40c7);
+    }
+    75% {
+        background: linear-gradient(#343a4028, #343a4093,#343a40)
+    }
+    100% {
+        background: linear-gradient(#343a405e, #343a40ce,#343a40);
+    }
 }
 .project-box:hover .project-box-img-wrapper::after{
     content: "";
@@ -27,7 +53,11 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#343a405e, #343a40a4,#343a40e3);
+    animation: gradient-animation;
+    animation-duration: 0.1s;
+    /*background: linear-gradient(#343a4028, #343a4067,#343a40a4);*/
+    /*background: linear-gradient(#343a403f, #343a4093,#343a40c7);*/
+    background: linear-gradient(#343a405e, #343a40ce,#343a40);
 }
 
 .project-box-content {

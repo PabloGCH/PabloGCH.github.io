@@ -94,4 +94,7 @@ section p {
     #about-me {
         width: 40%;
     }
+    .me-img {
+        width: 25%;
+    }
 }
