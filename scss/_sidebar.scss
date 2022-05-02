@@ -1,0 +1,30 @@
+.sidebar {
+    z-index: 1200;
+    overflow-y: scroll;
+    background-color: $primary-color;
+    width: 100vw;
+    height: 100vh;
+    .sidebar-close-btn-wrapper {
+        background-color: $primary-color;
+        button {
+            background-color: $font-color;
+            color: $primary-color;
+        }
+    }
+    ul {
+        list-style-type: none;
+        li {
+            transition: 0.2s;
+            border-bottom: 1px solid $highlight;
+            &:hover {
+                background-color: $highlight;
+            }
+            a {
+                display: block;
+                width: 100%;
+                color: $font-color;
+                text-decoration: none;
+            }
+        }
+    }
+}
