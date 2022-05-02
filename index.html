@@ -3,129 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
     <script src="https://kit.fontawesome.com/651ceef0bd.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Portfolio</title>
 </head>
 <body class="body">
-    <header class="header sticky-top">
+    <div class="header sticky-top d-md-none">
         <div class="navbar navbar-dark">
             <button class="navbar-toggler mx-1 my-1" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-    </header>
+    </div>
     <main>
-
-
-
-        <div id="sidebar" class="collapse collapse-horizontal fixed-top">
-            <div class="sidebar fs-1">
-                <div class="sidebar-close-btn-wrapper d-flex justify-content-end sticky-top">
-                    <button class="btn btn-light fw-bold mx-2 my-2" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="true">X</button>
-                </div>
-                <nav>
-                    <ul class="flex-column px-0">
-                        <li class="py-2 ps-1">
-                            <a href="#" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="true">Inicio</a>
-                        </li>
-                        <li class="py-2 ps-1">
-                            <a href="#" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="true">Sobre mi</a>
-                        </li>
-                        <li class="py-2 ps-1">
-                            <a href="#" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="true">Tecnologías</a>
-                        </li>
-                        <li class="py-2 ps-1">
-                            <a href="#" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="true">Proyectos</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="fs-4">
-                    <p class="ps-1 fs-2">Contacto/redes: </p>
-                    <ul class="flex-column px-0 my-0">
-                        <li class="py-2 ps-1">
-                            <a href="#" class= "d-flex flex-row align-items-center">
-                                <i class="fa-brands fa-github fa-xl fa-fw"></i>
-                                <span class= "ms-2">Github</span>
-                            </a>
-                        </li>
-                        <li class="py-2 ps-1">
-                            <a href="#" class= "d-flex flex-row align-items-center">
-                                <i class="fa-brands fa-linkedin fa-xl fa-fw"></i>
-                                <span class= "ms-2">Linkedin</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class= "d-flex flex-row align-items-center py-2 ps-1">
-                        <i class="fa-solid fa-envelope fa-xl fa-fw"></i>
-                        <span class= "ms-2">pablochoconi@gmail.com</span>
+        <div class="d-flex flex-row">
+            <div>
+                <div id="sidebar" class="collapse collapse-horizontal show fixed-top sticky-md-top">
+                    <div class="sidebar">
+                        <div class="sidebar-close-btn-wrapper d-flex justify-content-end sticky-top d-md-none">
+                            <button class="btn btn-light fw-bold mx-2 my-2" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="true">X</button>
+                        </div>
+                        <nav>
+                            <ul class="flex-column px-0 pt-md-5">
+                                <li class="py-2 ps-1">
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="true">Inicio</a>
+                                </li>
+                                <li class="py-2 ps-1">
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="true">Sobre mi</a>
+                                </li>
+                                <li class="py-2 ps-1">
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="true">Tecnologías</a>
+                                </li>
+                                <li class="py-2 ps-1">
+                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="true">Proyectos</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div>
+                            <p class="ps-1">Contacto/redes: </p>
+                            <ul class="flex-column px-0 my-0">
+                                <li class="py-2 ps-1">
+                                    <a href="#" class= "d-flex flex-row align-items-center">
+                                        <i class="fa-brands fa-github fa-xl fa-fw"></i>
+                                        <span class= "ms-2">Github</span>
+                                    </a>
+                                </li>
+                                <li class="py-2 ps-1">
+                                    <a href="#" class= "d-flex flex-row align-items-center">
+                                        <i class="fa-brands fa-linkedin fa-xl fa-fw"></i>
+                                        <span class= "ms-2">Linkedin</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class= "d-flex flex-row align-items-center py-2 ps-1">
+                                <i class="fa-solid fa-envelope fa-xl fa-fw"></i>
+                                <span class= "ms-2">pablochoconi@gmail.com</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <div>
 
-
-
-        <div class="hero-section d-flex flex-column align-items-center">
-            <div class="video-wrapper">
-                <video class="hero-section-video" src="assets/hero-section-video.mp4" autoplay muted loop></video>
-            </div>
-            <img class="img-fluid" src="assets/pfp.png" alt="foto de perfil">
-            <h1 class="fw-bold text-center">Pablo Choconi</h1>
-        </div>
-
-
-
-
-        <div id="about-me"></div>
-        <div class="content-box mt-5 px-2 py-3">
-            <section>
-                <h2 class="text-center fw-bold pb-2">Sobre mi</h2>
-                <p>
-                    Estudiante de ingeniería y aspirante a desarrollador. Actualmente me encuentro en el desafiante objetivo de insertarme en el mercado laboral del sector de IT. Mientras tanto estoy perfeccionandome constantemente, aprendiendo nuevas tecnologías y practicando su uso, de forma autodidacta o mediante cursos. 
-                </p>
-            </section>
-        </div>
-
-
-
-
-        <div id="projects"></div>
-        <div class="content-box mt-5 px-2 py-3">
-            <section>
-                <h2 class="text-center fw-bold pb-2">Proyectos</h2>
-                <div class="projects-grid">
-                    <a href="pages/newsPage.html">
-                        <div class="project-box">
-                            <div class="project-box-img-wrapper">
-                                <img src="assets/newsPageImg.png">
-                            </div>
-                            <div class="project-box-content">
-                                <h4>Pagina de noticias</h4>
-                                <p>Una simple página de noticias que realice para practicar
-                                el uso de JavaScript, Api-Rests y jQuery.</p>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="pages/angularNotepad.html">
-                        <div class="project-box">
-                            <div class="project-box-img-wrapper">
-                                <img src="assets/angularNotepadImg.jpg">
-                            </div>
-                            <div class="project-box-content">
-                                <h4>Aplicacion de notas/Angular</h4>
-                                <p>Una aplicacion para tomar notas que realice con angular
-                                para interiorizar los conceptos basicos y las buenas practicas
-                                del framework
-                                </p>
-                            </div>
-                        </div>
-                    </a>
+                <div class="hero-section d-flex flex-column align-items-center">
+                    <div class="video-wrapper">
+                        <video class="hero-section-video" src="assets/hero-section-video.mp4" autoplay muted loop></video>
+                    </div>
+                    <img class="img-fluid" src="assets/pfp.png" alt="foto de perfil">
+                    <h1 class="fw-bold text-center">Pablo Choconi</h1>
                 </div>
-
+        
+        
+        
+        
+                <div id="about-me"></div>
+                <div class="content-box mt-5 px-2 py-3">
+                    <section>
+                        <h2 class="text-center fw-bold pb-2">Sobre mi</h2>
+                        <p>
+                            Estudiante de ingeniería y aspirante a desarrollador web fullstack. Actualmente me encuentro en el desafiante objetivo de insertarme en el mercado laboral del sector de IT. Mientras tanto estoy perfeccionandome constantemente, aprendiendo nuevas tecnologías y practicando su uso, de forma autodidacta o mediante cursos. 
+                        </p>
+                    </section>
+                </div>
+        
+        
+        
+        
+                <div id="projects"></div>
+                <div class="content-box mt-5 px-2 py-3">
+                    <section>
+                        <h2 class="text-center fw-bold pb-2">Proyectos</h2>
+                        <div class="projects-grid">
+                            <a href="pages/newsPage.html">
+                                <div class="project-box">
+                                    <div class="project-box-img-wrapper">
+                                        <img src="assets/newsPageImg.png">
+                                    </div>
+                                    <div class="project-box-content">
+                                        <h4>Pagina de noticias</h4>
+                                        <p>Una simple página de noticias que realice para practicar
+                                        el uso de JavaScript, Api-Rests y jQuery.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        <a href="pages/angularNotepad.html">
+                            <div class="project-box">
+                                <div class="project-box-img-wrapper">
+                                    <img src="assets/angularNotepadImg.jpg">
+                                </div>
+                                <div class="project-box-content">
+                                    <h4>Aplicacion de notas/Angular</h4>
+                                    <p>Una aplicacion para tomar notas que realice con angular
+                                    para interiorizar los conceptos basicos y las buenas practicas
+                                    del framework
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </section>
+                </div>
+            </div>
+        </div>
     </main>
+    <script src="js/showCollapsed.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

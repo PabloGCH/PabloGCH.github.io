@@ -1,6 +1,5 @@
 .sidebar {
     z-index: 1200;
-    overflow-y: scroll;
     background-color: $primary-color;
     width: 100vw;
     height: 100vh;
@@ -26,5 +25,15 @@
                 text-decoration: none;
             }
         }
+    }
+    @media screen and (min-width: 768px){
+        width: 35vw;
+        border-right: 1px solid $highlight;
+    }
+    @media screen and (min-width: 992px){
+        width: 30vw;
+    }
+    @media screen and (min-width: 1200px){
+        width: 25vw;   
     }
 }
