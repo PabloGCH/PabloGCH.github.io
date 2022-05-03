@@ -14,7 +14,7 @@
     <div class="header sticky-top d-md-none">
         <div class="navbar navbar-dark">
             <button class="navbar-toggler mx-1 my-1" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </div>
@@ -24,21 +24,35 @@
                 <div id="sidebar" class="collapse collapse-horizontal fixed-top sticky-md-top">
                     <div class="sidebar">
                         <div class="sidebar-close-btn-wrapper d-flex justify-content-end sticky-top d-md-none">
-                            <button class="btn btn-light fw-bold mx-2 my-2" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="true">X</button>
+                            <button class="btn fw-bold mx-2 my-2" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="true">
+                                <i class="fa-solid fa-less-than"></i>
+                            </button>
                         </div>
                         <nav>
                             <ul class="flex-column px-0 pt-md-5">
                                 <li class="py-2 ps-2">
-                                    <a class="sidebar-nav-link" href="#">Inicio</a>
+                                    <a href="#" class= "d-flex flex-row align-items-center">
+                                        <i class="fa-solid fa-house fa-fw"></i>
+                                        <span class= "ms-2">Inicio</span>
+                                    </a>
                                 </li>
                                 <li class="py-2 ps-2">
-                                    <a class="sidebar-nav-link" href="#">Sobre mi</a>
+                                    <a href="#" class= "d-flex flex-row align-items-center">
+                                        <i class="fa-solid fa-user fa-fw"></i>
+                                        <span class= "ms-2">Sobre mi</span>
+                                    </a>
                                 </li>
                                 <li class="py-2 ps-2">
-                                    <a class="sidebar-nav-link" href="#">Tecnologías</a>
+                                    <a href="#" class= "d-flex flex-row align-items-center">
+                                        <i class="fa-solid fa-wrench fa-fw"></i>
+                                        <span class= "ms-2">Tecnologías</span>
+                                    </a>
                                 </li>
                                 <li class="py-2 ps-2">
-                                    <a class="sidebar-nav-link" href="#">Proyectos</a>
+                                    <a href="#" class= "d-flex flex-row align-items-center">
+                                        <i class="fa-solid fa-suitcase fa-fw"></i>
+                                        <span class= "ms-2">Proyectos</span>
+                                    </a>
                                 </li>
                             </ul>
                         </nav>
@@ -90,7 +104,6 @@
                 </div>
         
 
-
                 <div id="tecnologies"></div>
                 <div class="content-box mt-5 px-2 py-3">
                     <section>
@@ -105,7 +118,7 @@
                                 <button type="button" data-bs-target="#tech-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
                             <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="1500">
+                                <div class="carousel-item active">
                                     <div class="w-100 tech-slide">
                                         <div class="tech-slide-item">
                                             <div>
@@ -127,7 +140,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item" data-bs-interval="1500">
+                                <div class="carousel-item">
                                     <div class="w-100 tech-slide">
                                         <div class="tech-slide-item">
                                             <div>
@@ -149,7 +162,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item" data-bs-interval="1500">
+                                <div class="carousel-item">
                                     <div class="w-100 tech-slide">
                                         <div class="tech-slide-item">
                                             <div>
@@ -212,5 +225,13 @@
     </main>
     <script src="js/showCollapsed.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        var myCarousel = document.querySelector('#tech-carousel');
+        var carousel = new bootstrap.Carousel(myCarousel, {
+            interval: 2500,
+            pause: false,
+        });
+        carousel.cycle();
+    </script>
 </body>
 </html>

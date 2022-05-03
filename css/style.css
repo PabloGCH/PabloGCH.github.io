@@ -13,8 +13,9 @@
   .sidebar .sidebar-close-btn-wrapper {
     background-color: #090B10; }
     .sidebar .sidebar-close-btn-wrapper button {
-      background-color: #C6C6C7;
-      color: #090B10; }
+      box-shadow: none;
+      border: none;
+      color: #C6C6C7; }
   .sidebar ul {
     list-style-type: none; }
     .sidebar ul li {

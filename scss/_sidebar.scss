@@ -1,3 +1,4 @@
+
 .sidebar {
     z-index: 1200;
     background-color: $primary-color;
@@ -6,8 +7,9 @@
     .sidebar-close-btn-wrapper {
         background-color: $primary-color;
         button {
-            background-color: $font-color;
-            color: $primary-color;
+            box-shadow: none;
+            border: none;
+            color: $font-color;
         }
     }
     ul {
