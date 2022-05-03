@@ -2,7 +2,7 @@ var sidebar = document.getElementById("sidebar");
 var sidebarLinkCollection = document.getElementsByClassName("sidebar-nav-link");
 var sidebarLinks = Array.from(sidebarLinkCollection);
 var bootstrapCollapseSidebar = new bootstrap.Collapse(sidebar, {
-
+    toggle: false,    
 });
 
 function sidebarToggle() {
@@ -28,11 +28,13 @@ function showCollapsed(x) {
         unsetLinks();
         sidebar.classList.add("show");
     } else {
+        console.log("retira show");
         setLinks();
         sidebar.classList.remove("show");
     }
 }
 var x = window.matchMedia("(min-width: 768px)");
+console.log(sidebar.classList);
 showCollapsed(x);
 x.addEventListener("change", () => {
     showCollapsed(x);

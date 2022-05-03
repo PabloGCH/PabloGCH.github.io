@@ -110,6 +110,20 @@
       @media screen and (min-width: 1200px) {
         .tech-slide .tech-slide-item div {
           height: 100px; } }
+    .tech-slide .tech-slide-item p {
+      font-size: 15px; }
+      @media screen and (min-width: 576px) {
+        .tech-slide .tech-slide-item p {
+          font-size: 20px; } }
+      @media screen and (min-width: 768px) {
+        .tech-slide .tech-slide-item p {
+          font-size: 18px; } }
+      @media screen and (min-width: 992px) {
+        .tech-slide .tech-slide-item p {
+          font-size: 20px; } }
+      @media screen and (min-width: 1200px) {
+        .tech-slide .tech-slide-item p {
+          font-size: 25px; } }
 
 .projects-grid {
   display: grid;
