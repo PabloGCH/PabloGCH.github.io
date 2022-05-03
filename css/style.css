@@ -80,6 +80,12 @@
   background-color: #121217;
   border-top: 1px solid #45474B;
   border-bottom: 1px solid #45474B; }
+  .content-box section .project-gif {
+    border-top: 1px solid #45474B;
+    border-bottom: 1px solid #45474B; }
+  .content-box section a {
+    color: #C6C6C7;
+    font-weight: bold; }
 
 .tech-slide {
   display: flex;
