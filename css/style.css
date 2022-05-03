@@ -7,14 +7,14 @@
 
 .sidebar {
   z-index: 1200;
-  background-color: #121217;
+  background-color: #090B10;
   width: 100vw;
   height: 100vh; }
   .sidebar .sidebar-close-btn-wrapper {
-    background-color: #121217; }
+    background-color: #090B10; }
     .sidebar .sidebar-close-btn-wrapper button {
       background-color: #C6C6C7;
-      color: #121217; }
+      color: #090B10; }
   .sidebar ul {
     list-style-type: none; }
     .sidebar ul li {
@@ -29,17 +29,11 @@
         text-decoration: none; }
   @media screen and (min-width: 768px) {
     .sidebar {
-      width: 35vw;
+      width: auto;
       border-right: 1px solid #45474B; } }
-  @media screen and (min-width: 992px) {
-    .sidebar {
-      width: 30vw; } }
-  @media screen and (min-width: 1200px) {
-    .sidebar {
-      width: 25vw; } }
 
 .header {
-  background-color: #121217;
+  background-color: #090B10;
   border-bottom: 1px solid #45474B; }
 
 .hero-section {
@@ -63,11 +57,19 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: linear-gradient(rgba(0, 0, 0, 0), #1D1A1E); }
+      background: linear-gradient(rgba(0, 0, 0, 0), rgba(29, 26, 30, 0.4), rgba(29, 26, 30, 0.3), #1D1A1E); }
   .hero-section img {
     z-index: 900;
-    max-height: 80%;
-    width: auto; }
+    width: 60%; }
+    @media screen and (min-width: 576px) {
+      .hero-section img {
+        width: 50%; } }
+    @media screen and (min-width: 992px) {
+      .hero-section img {
+        width: 40%; } }
+    @media screen and (min-width: 1200px) {
+      .hero-section img {
+        width: 30%; } }
   .hero-section h1 {
     font-size: 50px;
     z-index: 900; }
@@ -77,6 +79,30 @@
   background-color: #121217;
   border-top: 1px solid #45474B;
   border-bottom: 1px solid #45474B; }
+
+.tech-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 50px; }
+  .tech-slide .tech-slide-item {
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10%; }
+    .tech-slide .tech-slide-item div {
+      height: 60px; }
+      .tech-slide .tech-slide-item div img {
+        height: 100%;
+        width: auto; }
+      @media screen and (min-width: 576px) {
+        .tech-slide .tech-slide-item div {
+          height: 80px; } }
+      @media screen and (min-width: 1200px) {
+        .tech-slide .tech-slide-item div {
+          height: 100px; } }
 
 .projects-grid {
   display: grid;
